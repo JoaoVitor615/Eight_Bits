@@ -3,4 +3,6 @@
     <string name="home">Home</string>
     <string name="cat">Categorias</string>
     <string name="info">Informações</string>
+    <string name="titulo_home">Home</string>
+    <string name="titulo_info">Informações</string>
 </resources>
