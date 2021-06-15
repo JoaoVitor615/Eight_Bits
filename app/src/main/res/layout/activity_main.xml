@@ -187,11 +187,11 @@
         app:layout_constraintVertical_bias="0.75" />
 
     <ScrollView
-        android:layout_width="0dp"
+        android:layout_width="409dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3"
         app:layout_constraintVertical_bias="1.0">
@@ -200,17 +200,81 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="411dp"
-                android:layout_height="250dp"
-                android:layout_marginTop="8dp"
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="268dp"
+                android:backgroundTint="#00FFFFFF"
                 android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/group_3" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar13"
+                android:layout_width="411dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="248dp"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:text="@string/titulo_monitor"
+                android:textColor="#040404"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar13"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar13"
+                app:layout_constraintStart_toStartOf="@+id/toolbar13"
+                app:layout_constraintTop_toTopOf="@+id/toolbar13" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="210dp"
+                android:layout_height="248dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                app:srcCompat="@drawable/monitor_1" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="210dp"
+                android:layout_height="248dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                app:srcCompat="@drawable/monitor_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="0dp"
+                android:layout_height="268dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+                app:srcCompat="@drawable/promo_headset" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

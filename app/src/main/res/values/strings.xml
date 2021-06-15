@@ -14,4 +14,7 @@
     <!--Logotipo-->
     <string name="logopt1">8</string>
     <string name="logopt2">b</string>
+
+    <!--Página Home-->
+    <string name="titulo_monitor">Monitores em promoção</string>
 </resources>
