@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton botaoAbrirInfo;
+    ImageButton botaoAbrirInfo, botaoAbrirCat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         botaoAbrirInfo=findViewById(R.id.btnInfo);
-
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
                 startActivity(telaInfo);
+            }
+        });
+
+        botaoAbrirCat=findViewById(R.id.btnMenuCat);
+        botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
+                startActivity(telaCat);
             }
         });
     }

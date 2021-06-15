@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">Eight Bits</string>
+
+    <!--Legenda dos Botões-->
     <string name="home">Home</string>
     <string name="cat">Categorias</string>
     <string name="info">Informações</string>
+
+    <!--Títulos de Páginas-->
     <string name="titulo_home">Home</string>
     <string name="titulo_info">Informações</string>
+    <string name="titulo_cat">Categorias</string>
+
+    <!--Logotipo-->
     <string name="logopt1">8</string>
     <string name="logopt2">b</string>
 </resources>

@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Informacoes extends AppCompatActivity {
+public class activity_cat extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoAbrirCat;
+    ImageButton botaoAbrirHome, botaoAbrirInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cat);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_informacoes);
 
-        botaoAbrirHome=findViewById(R.id.btnHome2);
+        botaoAbrirHome=findViewById(R.id.btnHome3);
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,12 +25,12 @@ public class Informacoes extends AppCompatActivity {
             }
         });
 
-        botaoAbrirCat=findViewById(R.id.btnMenuCat2);
-        botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
+        botaoAbrirInfo=findViewById(R.id.btnInfo3);
+        botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
-                startActivity(telaCat);
+                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                startActivity(telaInfo);
             }
         });
     }
