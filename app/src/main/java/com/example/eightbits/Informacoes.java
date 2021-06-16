@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.eightbits.webviews_midias.WebView_Instagram;
+
 public class Informacoes extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoAbrirCat;
+    ImageButton botaoAbrirHome, botaoAbrirCat, botaoInsta;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,17 @@ public class Informacoes extends AppCompatActivity {
             public void onClick(View v) {
                 Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
                 startActivity(telaCat);
+            }
+        });
+
+
+        //Botões de mídia
+        botaoInsta=findViewById(R.id.btnInsta);
+        botaoInsta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent telaInsta=new Intent(getApplicationContext(), WebView_Instagram.class);
+                startActivity(telaInsta);
             }
         });
     }

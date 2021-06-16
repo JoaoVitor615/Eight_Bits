@@ -209,7 +209,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/group_3" />
+                app:srcCompat="@drawable/promo_teclado" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar13"
