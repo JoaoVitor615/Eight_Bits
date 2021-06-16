@@ -1,6 +1,8 @@
 package com.example.eightbits;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +23,8 @@ public class activity_cat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(telaHome);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(activity_cat.this, telaHome, animacao.toBundle());
             }
         });
 
@@ -30,7 +33,8 @@ public class activity_cat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
-                startActivity(telaInfo);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(activity_cat.this, telaInfo, animacao.toBundle());
             }
         });
     }

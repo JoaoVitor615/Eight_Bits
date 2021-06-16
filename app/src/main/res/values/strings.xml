@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Eight Bits</string>
 
+    <!--Tela de escolha de app-->
+    <string name="chooseInsta">Escolha o aplicativo</string>
+    <string name="chooseEmail">Enviar e-mail</string>
     <!--Legenda dos Botões-->
     <string name="home">Home</string>
     <string name="cat">Categorias</string>
