@@ -4,6 +4,7 @@
     <!--Tela de escolha de app-->
     <string name="chooseInsta">Escolha o aplicativo</string>
     <string name="chooseEmail">Enviar e-mail</string>
+
     <!--Legenda dos Botões-->
     <string name="home">Home</string>
     <string name="cat">Categorias</string>
@@ -20,4 +21,7 @@
 
     <!--Página Home-->
     <string name="titulo_monitor">Monitores em promoção</string>
+
+    <!--Página da Categoria Headset-->
+    <string name="titulo_headset">Headset</string>
 </resources>

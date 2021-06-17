@@ -45,7 +45,7 @@ public class Informacoes extends AppCompatActivity {
 
     public void abrirInsta(View view)
     {
-        Uri uri = Uri.parse("https://store.steampowered.com/app/408250/Eagle_Flight/");
+        Uri uri = Uri.parse("https://www.instagram.com/eightbitsoficial/");
         Intent it = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(Intent.createChooser(it, getString(R.string.chooseInsta)));
     }
@@ -74,5 +74,11 @@ public class Informacoes extends AppCompatActivity {
         Intent it = new Intent(Intent.ACTION_SENDTO);
         it.setData(uri);
         startActivity(Intent.createChooser(it, getString(R.string.chooseEmail)));
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
     }
 }

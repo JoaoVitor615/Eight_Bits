@@ -23,4 +23,10 @@ public class WebViewActivity extends AppCompatActivity {
         wv.setWebViewClient(new WebViewClient());
         wv.loadUrl(uri.toString());
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
+    }
 }

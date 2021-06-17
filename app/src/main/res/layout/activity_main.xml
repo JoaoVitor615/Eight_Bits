@@ -130,7 +130,7 @@
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="@color/gray"
+        android:background="#C4959595"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
@@ -200,7 +200,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="563dp"
+            tools:layout_editor_absoluteY="1dp">
 
             <ImageButton
                 android:id="@+id/imageButton4"
@@ -245,11 +246,12 @@
                 android:layout_marginTop="8dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="fitCenter"
-                app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.02"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/monitor_1" />
 
             <ImageButton
@@ -259,24 +261,50 @@
                 android:layout_marginTop="8dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="fitCenter"
-                app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.98"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/monitor_2" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="0dp"
-                android:layout_height="268dp"
-                android:layout_marginTop="4dp"
+                android:layout_width="402dp"
+                android:layout_height="266dp"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
                 app:srcCompat="@drawable/promo_headset" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="410dp"
+                android:layout_height="256dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+                app:srcCompat="@drawable/promo_razer" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

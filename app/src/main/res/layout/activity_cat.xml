@@ -179,4 +179,61 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar8"
         app:layout_constraintTop_toTopOf="@+id/toolbar8"
         app:layout_constraintVertical_bias="0.82" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/catteclado" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/catmonitor" />
+
+            <ImageButton
+                android:id="@+id/btnHeadset"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/catheadset" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/catmouse" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/catofertas" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

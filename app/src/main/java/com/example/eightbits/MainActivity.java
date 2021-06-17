@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
+    }
 }
