@@ -15,6 +15,9 @@
         android:theme="@style/Theme.EightBits">
         <activity android:name=".Tela_Headset"></activity>
         <activity android:name=".Tela_Mouse"></activity>
+        <activity android:name=".Tela_Teclado"></activity>
+        <activity android:name=".Tela_Monitor"></activity>
+        <activity android:name=".Tela_Ofertas"></activity>
         <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

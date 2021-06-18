@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 public class activity_cat extends AppCompatActivity {
 
     ImageButton botaoAbrirHome, botaoAbrirInfo,
-    botaoHeadset, botaoMouse;
+    botaoHeadset, botaoMouse, botaoTeclado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,38 @@ public class activity_cat extends AppCompatActivity {
                 ActivityCompat.startActivity(activity_cat.this, abrirCat, animacao.toBundle());
             }
         });
+
+        botaoTeclado=findViewById(R.id.btnTeclado);
+        botaoTeclado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abrirCat = new Intent(getApplicationContext(), Tela_Teclado.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(activity_cat.this, abrirCat, animacao.toBundle());
+            }
+        });
+
+        botaoTeclado=findViewById(R.id.btnMonitor);
+        botaoTeclado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abrirCat = new Intent(getApplicationContext(), Tela_Monitor.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(activity_cat.this, abrirCat, animacao.toBundle());
+            }
+        });
+
+        botaoTeclado=findViewById(R.id.btnOferta);
+        botaoTeclado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent abrirCat = new Intent(getApplicationContext(), Tela_Ofertas.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(activity_cat.this, abrirCat, animacao.toBundle());
+            }
+        });
+
+
 
     }
 

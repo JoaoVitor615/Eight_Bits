@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECEBEB"
-    tools:context=".Tela_Mouse">
+    tools:context=".Tela_Monitor">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta"
-        android:text="@string/titulo_mouse"
+        android:text="@string/titulo_headset"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar14"
@@ -155,7 +155,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse1_of" />
+                    app:srcCompat="@drawable/monitor1" />
 
                 <ImageButton
                     android:id="@+id/btnHeadset2"
@@ -163,7 +163,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse2" />
+                    app:srcCompat="@drawable/monitor2_of" />
 
             </TableRow>
 
@@ -177,7 +177,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse3" />
+                    app:srcCompat="@drawable/monitor3_of" />
 
                 <ImageButton
                     android:id="@+id/btnHeadset4"
@@ -185,7 +185,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse4_of" />
+                    app:srcCompat="@drawable/monitor4" />
             </TableRow>
 
             <TableRow
@@ -198,7 +198,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse5" />
+                    app:srcCompat="@drawable/monitor5_of" />
 
                 <ImageButton
                     android:id="@+id/btnHeadset6"
@@ -206,7 +206,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse6" />
+                    app:srcCompat="@drawable/monitor6_of" />
             </TableRow>
 
             <TableRow
@@ -219,7 +219,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse7" />
+                    app:srcCompat="@drawable/monitor7" />
 
                 <ImageButton
                     android:id="@+id/btnMouse4"
@@ -227,7 +227,7 @@
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse8_of" />
+                    app:srcCompat="@drawable/monitor8" />
 
             </TableRow>
 

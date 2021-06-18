@@ -232,7 +232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/allerta"
-                android:text="@string/titulo_monitor"
+                android:text="@string/promo_monitor"
                 android:textColor="#040404"
                 app:layout_constraintBottom_toBottomOf="@+id/toolbar13"
                 app:layout_constraintEnd_toEndOf="@+id/toolbar13"

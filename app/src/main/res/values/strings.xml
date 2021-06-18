@@ -20,9 +20,12 @@
     <string name="logopt2">b</string>
 
     <!--Página Home-->
-    <string name="titulo_monitor">Monitores em promoção</string>
+    <string name="promo_monitor">Monitores em promoção</string>
 
     <!--Página de Categorias-->
-    <string name="titulo_headset">Headset</string>
-    <string name="titulo_mouse">Mouse</string>
+    <string name="titulo_headset">Headsets</string>
+    <string name="titulo_mouse">Mouses</string>
+    <string name="titulo_teclado">Teclados</string>
+    <string name="titulo_monitor">Monitores</string>
+    <string name="titulo_ofertas">Ofertas</string>
 </resources>
