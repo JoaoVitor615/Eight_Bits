@@ -297,7 +297,7 @@
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="32dp"
                 android:layout_marginTop="8dp"
                 android:background="#FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/imageButton7"

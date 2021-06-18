@@ -15,7 +15,7 @@ import java.net.URLEncoder;
 
 public class Informacoes extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoAbrirCat, botaoInsta;
+    ImageButton botaoAbrirHome, botaoAbrirCat, botaoInsta, botaoFace, botaoTel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,14 +41,43 @@ public class Informacoes extends AppCompatActivity {
                 ActivityCompat.startActivity(Informacoes.this, telaCat, animacao.toBundle());
             }
         });
+
+        //Botões de mídia
+
+        botaoInsta=findViewById(R.id.btnInsta);
+        botaoInsta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.instagram.com/eightbitsoficial/");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chooseInsta)));
+            }
+        });
+
+        botaoFace=findViewById(R.id.btnFace);
+        botaoFace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.facebook.com");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, getString(R.string.chooseInsta)));
+            }
+        });
+
+        botaoTel=findViewById(R.id.btnTel);
+        botaoTel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("tel:123456789");
+                Intent it = new Intent(Intent.ACTION_DIAL,uri);
+                startActivity(it);
+            }
+        });
+
+
     }
 
-    public void abrirInsta(View view)
-    {
-        Uri uri = Uri.parse("https://www.instagram.com/eightbitsoficial/");
-        Intent it = new Intent(Intent.ACTION_VIEW,uri);
-        startActivity(Intent.createChooser(it, getString(R.string.chooseInsta)));
-    }
+
 
     public void abrirTwitter(View view)
     {

@@ -201,64 +201,86 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/bgmidia" />
 
-    <ImageButton
-        android:id="@+id/btnMaps"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:onClick="abrirMapa"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="346dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.100000024"
-        app:srcCompat="@drawable/placeholder" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-    <ImageButton
-        android:id="@+id/btnEmail"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:onClick="enviarEmail"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.100000024"
-        app:srcCompat="@drawable/email" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/btnTwitter"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:onClick="abrirTwitter"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.923"
-        app:srcCompat="@drawable/twitter__1_" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/btnInsta"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#00FFFFFF"
-        android:onClick="abrirInsta"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.923"
-        app:srcCompat="@drawable/instagram" />
+                <ImageButton
+                    android:id="@+id/btnMaps"
+                    android:layout_width="176dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="abrirMapa"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/placeholder" />
+
+                <ImageButton
+                    android:id="@+id/btnEmail"
+                    android:layout_width="176dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="enviarEmail"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/email" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="abrirTwitter"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/twitter__1_" />
+
+                <ImageButton
+                    android:id="@+id/btnInsta"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/instagram" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnFace"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/facebook" />
+
+                <ImageButton
+                    android:id="@+id/btnTel"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/phone_call" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

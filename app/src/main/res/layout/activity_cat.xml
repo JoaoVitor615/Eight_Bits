@@ -219,7 +219,7 @@
                 app:srcCompat="@drawable/catheadset" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btnMouse"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:backgroundTint="#00FFFFFF"
