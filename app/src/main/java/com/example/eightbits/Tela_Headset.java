@@ -12,7 +12,8 @@ import android.widget.ImageButton;
 
 public class Tela_Headset extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoVoltar, botaoAbrirInfo, botaoAbrirCat, headset1;
+    ImageButton botaoAbrirHome, botaoVoltar, botaoAbrirInfo, botaoAbrirCat,
+            headset1, headset2, headset3, headset4, headset5, headset6, headset7, headset8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +61,8 @@ public class Tela_Headset extends AppCompatActivity {
 
 
         //LINKS PARA OS SITES DOS PRODUTOS
-        headset1=findViewById(R.id.btnHeadset1);
+
+        headset1=findViewById(R.id.btnMouse1);
         headset1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +71,77 @@ public class Tela_Headset extends AppCompatActivity {
                 startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
             }
         });
+
+        headset2=findViewById(R.id.btnMouse2);
+        headset2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=100273&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6h7ArObWq9m3SYarSjRNDhZF6QipK1BIQStuhaBh1MHV1RXQErJF8oaArgOEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset3=findViewById(R.id.btnHeadset3);
+        headset3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.amazon.com.br/HyperX-STINGER-HX-HSCSC2-BK-WW-Pequeno/dp/B083Q6Q41G/ref=asc_df_B083Q6Q41G/?tag=googleshopp00-20&linkCode=df0&hvadid=393528102708&hvpos=&hvnetw=g&hvrand=16327734715695036937&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-898159447421&psc=1");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset4=findViewById(R.id.btnHeadset4);
+        headset4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=134027&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jgbDw2KzGjFP4wwioWE2c4p67est9fQGhzFISqYiUD943CamOWVP0aAlljEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset5=findViewById(R.id.btnHeadset5);
+        headset5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=93168&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6gV-eInXTkGZH9WoGPy2FNlTP5fKt50w_G6xFtwrKQ-DpIW4lMNvSYaAm3qEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset6=findViewById(R.id.btnHeadset6);
+        headset6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=104952&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hFQeZ7TS8krMLsicz0qu_WYNPFX1zCJx5n9UBGG1Kx5njfe9vYlzUaAv4KEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset7=findViewById(R.id.btnHeadset7);
+        headset7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=87352&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jDZUhjYPjo14HMVRH89LhFdK_svtPFgvqXMvl6WlK-chw1IiLo7HIaAnnMEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
+        headset8=findViewById(R.id.btnHeadset8);
+        headset8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=70078&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6id2JFuFRlnu09eFpuYUrNBw7GatQrEK2rfSyD3-lAaozwxWzNTljYaArVWEALw_wcB");
+                Intent it = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
+            }
+        });
+
 
     }
 

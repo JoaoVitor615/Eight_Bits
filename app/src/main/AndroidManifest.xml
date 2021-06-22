@@ -10,15 +10,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Eight Bits"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:screenOrientation="portrait"
+
+
         android:supportsRtl="true"
         android:theme="@style/Theme.EightBits">
-        <activity android:name=".Tela_Headset"></activity>
-        <activity android:name=".Tela_Mouse"></activity>
-        <activity android:name=".Tela_Teclado"></activity>
-        <activity android:name=".Tela_Monitor"></activity>
-        <activity android:name=".Tela_Ofertas"></activity>
-        <activity android:name=".WebViewActivity">
+        <activity android:name=".Tela_Headset"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_Mouse"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_Teclado"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_Monitor"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tela_Ofertas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -33,9 +40,12 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_cat" />
-        <activity android:name=".Informacoes" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity_cat"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Informacoes"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

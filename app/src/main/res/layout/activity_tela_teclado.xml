@@ -150,7 +150,7 @@
                 android:layout_height="match_parent" >
 
                 <ImageButton
-                    android:id="@+id/btnHeadset1"
+                    android:id="@+id/btnTeclado1"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -158,7 +158,7 @@
                     app:srcCompat="@drawable/teclado1" />
 
                 <ImageButton
-                    android:id="@+id/btnHeadset2"
+                    android:id="@+id/btnTeclado2"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -172,7 +172,7 @@
                 android:layout_height="match_parent" >
 
                 <ImageButton
-                    android:id="@+id/btnHeadset3"
+                    android:id="@+id/btnTeclado3"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -180,7 +180,7 @@
                     app:srcCompat="@drawable/teclado3" />
 
                 <ImageButton
-                    android:id="@+id/btnHeadset4"
+                    android:id="@+id/btnTeclado4"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -193,7 +193,7 @@
                 android:layout_height="match_parent" >
 
                 <ImageButton
-                    android:id="@+id/btnHeadset5"
+                    android:id="@+id/btnTeclado5"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -201,7 +201,7 @@
                     app:srcCompat="@drawable/teclado5" />
 
                 <ImageButton
-                    android:id="@+id/btnHeadset6"
+                    android:id="@+id/btnTeclado6"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -214,7 +214,7 @@
                 android:layout_height="match_parent" >
 
                 <ImageButton
-                    android:id="@+id/btnMouse1"
+                    android:id="@+id/btnTeclado7"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"
@@ -222,7 +222,7 @@
                     app:srcCompat="@drawable/teclado7of" />
 
                 <ImageButton
-                    android:id="@+id/btnMouse4"
+                    android:id="@+id/btnTeclado8"
                     android:layout_width="205dp"
                     android:layout_height="280dp"
                     android:backgroundTint="#00E6E6E6"

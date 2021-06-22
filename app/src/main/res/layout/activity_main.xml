@@ -200,7 +200,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="563dp"
+            android:layout_height="wrap_content"
             tools:layout_editor_absoluteY="1dp">
 
             <ImageButton
@@ -269,31 +269,6 @@
                 app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/monitor_2" />
 
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="402dp"
-                android:layout_height="266dp"
-                android:backgroundTint="#00FFFFFF"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider2"
-                app:srcCompat="@drawable/promo_headset" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="410dp"
-                android:layout_height="256dp"
-                android:backgroundTint="#00FFFFFF"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-                app:srcCompat="@drawable/promo_razer" />
-
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
@@ -304,6 +279,39 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="400dp"
+                android:layout_height="240dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2"
+                app:srcCompat="@drawable/promo_headset" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="400dp"
+                android:layout_height="240dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+                app:srcCompat="@drawable/promo_razer" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="400dp"
+                android:layout_height="240dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+                app:srcCompat="@drawable/promo_hyperx" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
