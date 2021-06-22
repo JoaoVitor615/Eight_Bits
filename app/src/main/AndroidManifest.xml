@@ -15,6 +15,8 @@
 
         <activity android:name=".Razer"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Hyperx"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Tela_Headset"
             android:screenOrientation="portrait"/>
         <activity android:name=".Tela_Mouse"

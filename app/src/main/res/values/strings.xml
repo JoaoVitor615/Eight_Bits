@@ -32,5 +32,11 @@
     <!--Página de Informações-->
     <string name="contatos">Clique para nos contatar</string>
 
+    <!--Página de Razer-->
+    <string name="razer_Mouses">Mouses</string>
+
+    <!--Página HyperX-->
+    <string name="hyperx_Kit">Conjuntos</string>
+
 
 </resources>

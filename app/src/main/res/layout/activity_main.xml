@@ -303,7 +303,7 @@
                 app:srcCompat="@drawable/promo_razer" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/btnHyperx"
                 android:layout_width="400dp"
                 android:layout_height="240dp"
                 android:backgroundTint="#00FFFFFF"

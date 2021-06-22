@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton botaoAbrirInfo, botaoAbrirCat, botaoRazer;
+    ImageButton botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaInfo=new Intent(getApplicationContext(),Razer.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(MainActivity.this, telaInfo, animacao.toBundle());
+            }
+        });
+
+        botaoHyperx=findViewById(R.id.btnHyperx);
+        botaoHyperx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent telaInfo=new Intent(getApplicationContext(),Hyperx.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
                 ActivityCompat.startActivity(MainActivity.this, telaInfo, animacao.toBundle());
             }
