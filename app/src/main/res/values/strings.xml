@@ -28,4 +28,9 @@
     <string name="titulo_teclado">Teclados</string>
     <string name="titulo_monitor">Monitores</string>
     <string name="titulo_ofertas">Ofertas</string>
+
+    <!--Página de Informações-->
+    <string name="contatos">Clique para nos contatar</string>
+
+
 </resources>

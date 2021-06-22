@@ -10,10 +10,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Eight Bits"
         android:roundIcon="@mipmap/ic_launcher_round"
-
-
         android:supportsRtl="true"
         android:theme="@style/Theme.EightBits">
+
+        <activity android:name=".Razer"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Tela_Headset"
             android:screenOrientation="portrait"/>
         <activity android:name=".Tela_Mouse"

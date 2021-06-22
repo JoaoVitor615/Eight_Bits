@@ -292,7 +292,7 @@
                 app:srcCompat="@drawable/promo_headset" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/btnRazer"
                 android:layout_width="400dp"
                 android:layout_height="240dp"
                 android:backgroundTint="#00FFFFFF"
@@ -310,7 +310,7 @@
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+                app:layout_constraintTop_toBottomOf="@+id/btnRazer"
                 app:srcCompat="@drawable/promo_hyperx" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

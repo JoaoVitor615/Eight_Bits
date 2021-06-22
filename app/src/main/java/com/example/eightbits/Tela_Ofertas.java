@@ -20,7 +20,7 @@ public class Tela_Ofertas extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_tela_ofertas);
 
-        botaoVoltar=findViewById(R.id.btnVoltar2);
+        botaoVoltar=findViewById(R.id.btnVoltar);
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

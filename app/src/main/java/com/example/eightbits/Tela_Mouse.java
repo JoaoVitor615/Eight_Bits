@@ -21,7 +21,7 @@ public class Tela_Mouse extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_tela_mouse);
 
-        botaoVoltar=findViewById(R.id.btnVoltar2);
+        botaoVoltar=findViewById(R.id.btnVoltar);
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

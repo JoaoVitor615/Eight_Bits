@@ -202,85 +202,108 @@
         app:srcCompat="@drawable/bgmidia" />
 
     <ScrollView
-        android:layout_width="360dp"
+        android:layout_width="355dp"
         android:layout_height="346dp"
         app:layout_constraintBottom_toTopOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-        <TableLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TableRow
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="@string/contatos"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24">
 
-                <ImageButton
-                    android:id="@+id/btnMaps"
-                    android:layout_width="176dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:onClick="abrirMapa"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/placeholder" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/btnEmail"
-                    android:layout_width="176dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:onClick="enviarEmail"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/email" />
-            </TableRow>
+                    <ImageButton
+                        android:id="@+id/btnMaps"
+                        android:layout_width="176dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:onClick="abrirMapa"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/placeholder" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/btnEmail"
+                        android:layout_width="176dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:onClick="enviarEmail"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/email" />
+                </TableRow>
 
-                <ImageButton
-                    android:id="@+id/btnTwitter"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:onClick="abrirTwitter"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/twitter__1_" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/btnInsta"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/instagram" />
+                    <ImageButton
+                        android:id="@+id/btnTwitter"
+                        android:layout_width="150dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:onClick="abrirTwitter"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/twitter__1_" />
 
-            </TableRow>
+                    <ImageButton
+                        android:id="@+id/btnInsta"
+                        android:layout_width="150dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/instagram" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                </TableRow>
 
-                <ImageButton
-                    android:id="@+id/btnFace"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/facebook" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/btnTel"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/phone_call" />
-            </TableRow>
+                    <ImageButton
+                        android:id="@+id/btnFace"
+                        android:layout_width="150dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/facebook" />
 
-        </TableLayout>
+                    <ImageButton
+                        android:id="@+id/btnTel"
+                        android:layout_width="150dp"
+                        android:layout_height="135dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/phone_call" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

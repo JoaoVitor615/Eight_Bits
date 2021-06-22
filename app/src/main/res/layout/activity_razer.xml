@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECEBEB"
-    tools:context=".Tela_Ofertas">
+    android:background="#252525"
+    tools:context=".Razer">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/toolbar12"
         app:layout_constraintTop_toTopOf="@+id/toolbar12"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/home__1_" />
 
     <ImageButton
         android:id="@+id/btnInfo4"
@@ -72,7 +72,7 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar12"
         app:layout_constraintTop_toTopOf="@+id/toolbar12"
         app:layout_constraintVertical_bias="0.56"
-        app:srcCompat="@drawable/menu__1_" />
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/textView19"
@@ -123,154 +123,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta"
-        android:text="@string/titulo_ofertas"
+        android:text="@string/titulo_mouse"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar14"
         app:layout_constraintEnd_toEndOf="@+id/toolbar14"
         app:layout_constraintStart_toStartOf="@+id/toolbar14"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar14"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnOf1"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/headset2_of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf2"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/headset3_of" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnOf3"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/monitor2_of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf4"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/monitor3_of" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnOf5"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/monitor5_of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf6"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/monitor6_of" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnOf7"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse1_of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf8"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00E6E6E6"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse4_of" />
-
-            </TableRow>
-
-            <TableRow>
-
-                <ImageButton
-                    android:id="@+id/btnOf9"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse8_of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf10"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/teclado4of" />
-            </TableRow>
-
-            <TableRow>
-
-                <ImageButton
-                    android:id="@+id/btnOf11"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/teclado6of" />
-
-                <ImageButton
-                    android:id="@+id/btnOf12"
-                    android:layout_width="205dp"
-                    android:layout_height="280dp"
-                    android:backgroundTint="#00FFFFFF"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/teclado7of" />
-            </TableRow>
-
-        </TableLayout>
-    </ScrollView>
 
     <ImageButton
         android:id="@+id/btnVoltar"
@@ -284,5 +143,97 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar14"
         app:layout_constraintTop_toTopOf="@+id/toolbar14"
         app:srcCompat="@drawable/seta_esquerda" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:background="#C9191919"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar14"
+        app:srcCompat="@drawable/razer" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/btnRazerLink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnRazer1"
+                        android:layout_width="205dp"
+                        android:layout_height="280dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/razer1" />
+
+                    <ImageButton
+                        android:id="@+id/btnRazer2"
+                        android:layout_width="205dp"
+                        android:layout_height="280dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/razer2" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnRazer3"
+                        android:layout_width="205dp"
+                        android:layout_height="280dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/razer3" />
+
+                    <ImageButton
+                        android:id="@+id/btnRazer4"
+                        android:layout_width="205dp"
+                        android:layout_height="280dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/razer4" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageButton
+                android:id="@+id/btnRazerLink"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/razer_link" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

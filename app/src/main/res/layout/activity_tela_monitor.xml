@@ -235,7 +235,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/btnVoltar2"
+        android:id="@+id/btnVoltar"
         android:layout_width="52dp"
         android:layout_height="48dp"
         android:backgroundTint="#00FFFFFF"
