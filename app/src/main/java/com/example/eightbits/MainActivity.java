@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx, monitor1, monitor2;
+    ImageButton botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx, monitor1, monitor2, botaoPromoTec;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(MainActivity.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
             }
         });
 
@@ -35,9 +35,19 @@ public class MainActivity extends AppCompatActivity {
         botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
+                Intent it =new Intent(getApplicationContext(), activity_cat.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(MainActivity.this, telaCat, animacao.toBundle());
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
+            }
+        });
+
+        botaoPromoTec=findViewById(R.id.btnPromoTeclado);
+        botaoPromoTec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it =new Intent(getApplicationContext(),Teclado_Promo.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
             }
         });
 
@@ -45,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         botaoRazer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Razer.class);
+                Intent it =new Intent(getApplicationContext(),Razer.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(MainActivity.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
             }
         });
 
@@ -55,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
         botaoHyperx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Hyperx.class);
+                Intent it=new Intent(getApplicationContext(),Hyperx.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(MainActivity.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
             }
         });
 

@@ -204,7 +204,7 @@
             tools:layout_editor_absoluteY="1dp">
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/btnPromoTeclado"
                 android:layout_width="0dp"
                 android:layout_height="268dp"
                 android:backgroundTint="#00FFFFFF"
@@ -225,7 +225,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+                app:layout_constraintTop_toTopOf="@+id/btnPromoTeclado" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -300,6 +300,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnRazer"
                 app:srcCompat="@drawable/promo_hyperx" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:background="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnHyperx" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

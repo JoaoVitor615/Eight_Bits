@@ -20,6 +20,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Teclado_Promo"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Razer"
             android:screenOrientation="portrait" />
         <activity

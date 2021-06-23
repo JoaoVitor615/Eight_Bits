@@ -30,9 +30,9 @@ public class Hyperx extends AppCompatActivity {
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
+                Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Hyperx.this, telaHome, animacao.toBundle());
+                ActivityCompat.startActivity(Hyperx.this, it, animacao.toBundle());
             }
         });
 
@@ -40,9 +40,9 @@ public class Hyperx extends AppCompatActivity {
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Hyperx.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(Hyperx.this, it, animacao.toBundle());
             }
         });
 

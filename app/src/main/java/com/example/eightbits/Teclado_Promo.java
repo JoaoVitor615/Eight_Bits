@@ -10,15 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
-public class Razer extends AppCompatActivity {
+public class Teclado_Promo extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoVoltar, botaoAbrirInfo, botaoAbrirCat,
-    razer1, razer2, razer3, razer4, razerLink;
+    ImageButton botaoAbrirHome, botaoVoltar, botaoAbrirInfo, botaoAbrirCat, teclado1, teclado2, teclado3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_razer);
+        setContentView(R.layout.activity_teclado_promo);
 
         botaoVoltar=findViewById(R.id.btnVoltar);
         botaoVoltar.setOnClickListener(new View.OnClickListener() {
@@ -28,13 +27,14 @@ public class Razer extends AppCompatActivity {
             }
         });
 
+
         botaoAbrirHome=findViewById(R.id.btnHome5);
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
+                ActivityCompat.startActivity(Teclado_Promo.this, it, animacao.toBundle());
             }
         });
 
@@ -44,7 +44,7 @@ public class Razer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
+                ActivityCompat.startActivity(Teclado_Promo.this, it, animacao.toBundle());
             }
         });
 
@@ -54,57 +54,35 @@ public class Razer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it=new Intent(getApplicationContext(), activity_cat.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
+                ActivityCompat.startActivity(Teclado_Promo.this, it, animacao.toBundle());
             }
         });
 
-        //LINKS PARA OS SITES DOS PRODUTOS
-
-        razer1=findViewById(R.id.btnRazer1);
-        razer1.setOnClickListener(new View.OnClickListener() {
+        teclado1=findViewById(R.id.btnTecOf1);
+        teclado1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.pichau.com.br/mouse-gamer-razer-naga-x-chroma-18000dpi-rz01-03590100-r3u1?gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6iHk_aNtBKYAwLHCZgIlQ0CepefHQTtrorIa9MicBcVykxmkuRUl4caAvJ-EALw_wcB");
+                Uri uri = Uri.parse("https://www.kabum.com.br/produto/89171/teclado-mecanico-gamer-redragon-kumara-led-vermelho-switch-outemu-blue-pt-k552-2-pt-blue-?gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hoRY_EF4scMZ14jf1-mMyJ1DV6cU-pxFZX7DvTmc2ZsBWPt_QeU18aAmJOEALw_wcB");
                 Intent it = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
             }
         });
 
-        razer2=findViewById(R.id.btnRazer2);
-        razer2.setOnClickListener(new View.OnClickListener() {
+        teclado2=findViewById(R.id.btnTecOf2);
+        teclado2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=104147&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hDBh4CqVzMvEZE-inoJtNMLMhFxEJ66LBv69PBu-Uh4CJGx9oL4zkaAvwvEALw_wcB");
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=128030&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hu_RVh4dJWVXt41EdgTqTi6P92hvcaiMLkbVB8txOLCBseMLihypMaAqWDEALw_wcB");
                 Intent it = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
             }
         });
 
-        razer3=findViewById(R.id.btnRazer3);
-        razer3.setOnClickListener(new View.OnClickListener() {
+        teclado3=findViewById(R.id.btnTecOf3);
+        teclado3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.kabum.com.br/produto/149298/mouse-gamer-razer-basilisk-v2-chroma-optical-switch-11-botoes-20000dpi-rz01-03160100-r3u1?gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6jrJ4SwRY_-IODn0B005l7LeV7QJnini0_oSSVdd0jL8CxidwLG-YwaAmlREALw_wcB");
-                Intent it = new Intent(Intent.ACTION_VIEW,uri);
-                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
-            }
-        });
-
-        razer4=findViewById(R.id.btnRazer4);
-        razer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=109815&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6gRVEq2NkJcVsjr-NKdpNnFNweXfpM8GCmVAjSz8afRQ4KTnUOF-1gaAlexEALw_wcB");
-                Intent it = new Intent(Intent.ACTION_VIEW,uri);
-                startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
-            }
-        });
-
-        razerLink=findViewById(R.id.btnRazerLink);
-        razerLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.razer.com/pc/gaming-mice");
+                Uri uri = Uri.parse("https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=130432&gclid=Cj0KCQjwlMaGBhD3ARIsAPvWd6hwqavsJfnSujV6clKgqGcUz9maojAe3F_aJIz2CzgcGYwIrwIeJI0aAvKeEALw_wcB");
                 Intent it = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
             }

@@ -33,9 +33,9 @@ public class Tela_Monitor extends AppCompatActivity {
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
+                Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Monitor.this, telaHome, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Monitor.this, it, animacao.toBundle());
             }
         });
 
@@ -43,9 +43,9 @@ public class Tela_Monitor extends AppCompatActivity {
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Monitor.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Monitor.this, it, animacao.toBundle());
             }
         });
 
@@ -53,9 +53,9 @@ public class Tela_Monitor extends AppCompatActivity {
         botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
+                Intent it=new Intent(getApplicationContext(), activity_cat.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Monitor.this, telaCat, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Monitor.this, it, animacao.toBundle());
             }
         });
 

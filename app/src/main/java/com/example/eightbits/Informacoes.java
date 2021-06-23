@@ -26,9 +26,9 @@ public class Informacoes extends AppCompatActivity {
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
+                Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Informacoes.this, telaHome, animacao.toBundle());
+                ActivityCompat.startActivity(Informacoes.this, it, animacao.toBundle());
             }
         });
 
@@ -36,9 +36,9 @@ public class Informacoes extends AppCompatActivity {
         botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
+                Intent it=new Intent(getApplicationContext(), activity_cat.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Informacoes.this, telaCat, animacao.toBundle());
+                ActivityCompat.startActivity(Informacoes.this, it, animacao.toBundle());
             }
         });
 
@@ -75,6 +75,8 @@ public class Informacoes extends AppCompatActivity {
         });
 
 
+
+
     }
 
 
@@ -88,6 +90,7 @@ public class Informacoes extends AppCompatActivity {
 
     public void abrirMapa(View view)
     {
+
         Uri location= Uri.parse("geo:0,0?q=Etec+Professor+Basilides+de+Godoy");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
         startActivity(mapIntent);

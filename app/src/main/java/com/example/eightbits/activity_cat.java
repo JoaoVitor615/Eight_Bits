@@ -23,9 +23,9 @@ public class activity_cat extends AppCompatActivity {
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
+                Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(activity_cat.this, telaHome, animacao.toBundle());
+                ActivityCompat.startActivity(activity_cat.this, it, animacao.toBundle());
             }
         });
 
@@ -33,9 +33,9 @@ public class activity_cat extends AppCompatActivity {
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(activity_cat.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(activity_cat.this, it, animacao.toBundle());
             }
         });
 

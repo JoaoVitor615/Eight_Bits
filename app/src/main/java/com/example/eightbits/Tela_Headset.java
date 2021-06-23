@@ -33,9 +33,9 @@ public class Tela_Headset extends AppCompatActivity {
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaHome= new Intent(getApplicationContext(),MainActivity.class);
+                Intent it= new Intent(getApplicationContext(),MainActivity.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Headset.this, telaHome, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Headset.this, it, animacao.toBundle());
             }
         });
 
@@ -43,9 +43,9 @@ public class Tela_Headset extends AppCompatActivity {
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaInfo=new Intent(getApplicationContext(),Informacoes.class);
+                Intent it=new Intent(getApplicationContext(),Informacoes.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Headset.this, telaInfo, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Headset.this, it, animacao.toBundle());
             }
         });
 
@@ -53,16 +53,16 @@ public class Tela_Headset extends AppCompatActivity {
         botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent telaCat=new Intent(getApplicationContext(), activity_cat.class);
+                Intent it=new Intent(getApplicationContext(), activity_cat.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Tela_Headset.this, telaCat, animacao.toBundle());
+                ActivityCompat.startActivity(Tela_Headset.this, it, animacao.toBundle());
             }
         });
 
 
         //LINKS PARA OS SITES DOS PRODUTOS
 
-        headset1=findViewById(R.id.btnMouse1);
+        headset1=findViewById(R.id.btnTecOf1);
         headset1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +72,7 @@ public class Tela_Headset extends AppCompatActivity {
             }
         });
 
-        headset2=findViewById(R.id.btnMouse2);
+        headset2=findViewById(R.id.btnTecOf2);
         headset2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +82,7 @@ public class Tela_Headset extends AppCompatActivity {
             }
         });
 
-        headset3=findViewById(R.id.btnHeadset3);
+        headset3=findViewById(R.id.btnTecOf3);
         headset3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
