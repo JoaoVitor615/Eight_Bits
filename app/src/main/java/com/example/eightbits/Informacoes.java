@@ -58,7 +58,7 @@ public class Informacoes extends AppCompatActivity {
         botaoFace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.facebook.com");
+                Uri uri = Uri.parse("https://www.facebook.com/profile.php?id=100069735286308&viewas=100000686899395");
                 Intent it = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(Intent.createChooser(it, getString(R.string.chooseInsta)));
             }
@@ -83,7 +83,7 @@ public class Informacoes extends AppCompatActivity {
 
     public void abrirTwitter(View view)
     {
-        Uri uri_t = Uri.parse("https://www.twitter.com");
+        Uri uri_t = Uri.parse("https://twitter.com/eightbits5");
         Intent it_t = new Intent(Intent.ACTION_VIEW,uri_t);
         startActivity(Intent.createChooser(it_t, "Escolha o n"));
     }
