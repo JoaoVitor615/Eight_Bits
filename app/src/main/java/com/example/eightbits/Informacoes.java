@@ -1,23 +1,31 @@
 package com.example.eightbits;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
-
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class Informacoes extends AppCompatActivity {
+    public static final String PREFS_NAME = "memoria";
+    SharedPreferences settings;
+    int contador = 0;
 
-    ImageButton botaoAbrirHome, botaoAbrirCat, botaoInsta, botaoFace, botaoTel;
+    ImageButton botaoCoracao, botaoAbrirHome, botaoAbrirCat, botaoInsta, botaoFace, botaoTel;
+    TextView txtCoracao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        settings = getSharedPreferences(PREFS_NAME, 0);
+        contador = settings.getInt( "contador", contador);
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_informacoes);
@@ -73,12 +81,31 @@ public class Informacoes extends AppCompatActivity {
                 startActivity(it);
             }
         });
-
-
-
-
+        settings = getSharedPreferences(PREFS_NAME, 0);
+        contador = settings.getInt( "contador", contador);
+        botaoCoracao = findViewById(R.id.btnCoracao);
+        txtCoracao = findViewById(R.id.txtCoracao);
+        contarLike();
+        botaoCoracao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                contador++;
+                if(contador%2==1){
+                    botaoCoracao.setImageResource(R.drawable.coracao_p);
+                }
+                else{
+                    botaoCoracao.setImageResource(R.drawable.coracao_v);
+                }
+                contarLike();
+                settings.edit().putInt("contador", contador).apply();
+            }
+        });
     }
-
+    //Contar likes:)
+    private void contarLike() {
+        String s =Integer.toString(contador);
+        txtCoracao.setText(s + " Likes");
+    }
 
 
     public void abrirTwitter(View view)
@@ -113,4 +140,5 @@ public class Informacoes extends AppCompatActivity {
         super.finish();
         overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
     }
+
 }
