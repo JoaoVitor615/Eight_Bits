@@ -20,7 +20,7 @@ public class Informacoes extends AppCompatActivity {
     SharedPreferences settings;
     int contador = 0;
 
-    ImageButton botaoCoracao, botaoAbrirHome, botaoAbrirCat, botaoInsta, botaoFace, botaoTel;
+    ImageButton botaoCoracao, botaoSugestoes, botaoAbrirHome, botaoAbrirCat, botaoInsta, botaoFace, botaoTel;
     TextView txtCoracao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,16 @@ public class Informacoes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_informacoes);
+
+        botaoSugestoes = findViewById(R.id.btnSugestoes);
+        botaoSugestoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it= new Intent(getApplicationContext(),Sugestoes.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
+                ActivityCompat.startActivity(Informacoes.this, it, animacao.toBundle());
+            }
+        });
 
         botaoAbrirHome=findViewById(R.id.btnHome2);
         botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +91,9 @@ public class Informacoes extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        //shared preferences
+
         settings = getSharedPreferences(PREFS_NAME, 0);
         contador = settings.getInt( "contador", contador);
         botaoCoracao = findViewById(R.id.btnCoracao);
