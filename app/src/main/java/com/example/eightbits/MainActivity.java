@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx, monitor1, monitor2, botaoPromoTec;
+    ImageButton botaoCompras, botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx, monitor1, monitor2, botaoPromoTec;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it =new Intent(getApplicationContext(), activity_cat.class);
+                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
+                ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
+            }
+        });
+
+        botaoCompras = findViewById(R.id.btnCompras);
+        botaoCompras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it =new Intent(getApplicationContext(), Compras.class);
                 ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
                 ActivityCompat.startActivity(MainActivity.this, it, animacao.toBundle());
             }

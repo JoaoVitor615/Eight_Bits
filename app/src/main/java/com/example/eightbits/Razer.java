@@ -12,7 +12,7 @@ import androidx.core.app.ActivityOptionsCompat;
 
 public class Razer extends AppCompatActivity {
 
-    ImageButton botaoAbrirHome, botaoVoltar, botaoAbrirInfo, botaoAbrirCat,
+    ImageButton botaoVoltar,
     razer1, razer2, razer3, razer4, razerLink;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,35 +28,6 @@ public class Razer extends AppCompatActivity {
             }
         });
 
-        botaoAbrirHome=findViewById(R.id.btnHome5);
-        botaoAbrirHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it= new Intent(getApplicationContext(),MainActivity.class);
-                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
-            }
-        });
-
-        botaoAbrirInfo=findViewById(R.id.btnInfo4);
-        botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it=new Intent(getApplicationContext(),Informacoes.class);
-                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_esquerda, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
-            }
-        });
-
-        botaoAbrirCat=findViewById(R.id.btnMenuCat4);
-        botaoAbrirCat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it=new Intent(getApplicationContext(), activity_cat.class);
-                ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.mover_direita, R.anim.fade_out);
-                ActivityCompat.startActivity(Razer.this, it, animacao.toBundle());
-            }
-        });
 
         //LINKS PARA OS SITES DOS PRODUTOS
 
