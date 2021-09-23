@@ -3,10 +3,18 @@ package com.example.eightbits;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class Sugestoes extends AppCompatActivity {
 
@@ -19,19 +27,17 @@ public class Sugestoes extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        EditText editText = (EditText) findViewById(R.id.edittextSug);
-        CharSequence dadosSug = editText.getText();
-        outState.putCharSequence("DadoSalvo", dadosSug);
+    public void fGravarExterna(View view){
+        Intent it = new Intent(this, Gravacao.class);
+        it.putExtra(Constants.STORAGE_TYPE, Constants.Type.EXTERNAL);
+        startActivity(it);
     }
 
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        CharSequence dadosSalvos = savedInstanceState.getCharSequence("DadoSalvo");
-        EditText myEditText = (EditText)findViewById(R.id.edittextSug);
-        myEditText.setText(dadosSalvos);
+    public void fLerrExterna(View view){
+        Intent it = new Intent(this, Leitura.class);
+        it.putExtra(Constants.STORAGE_TYPE, Constants.Type.EXTERNAL);
+        startActivity(it);
     }
+
+
 }

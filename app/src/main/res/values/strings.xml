@@ -21,6 +21,7 @@
 
     <!--Página Home-->
     <string name="promo_monitor">Monitores em promoção</string>
+    <string name="toastSensor">Esta tela não suporta o modo retrato!</string>
 
     <!--Página de Categorias-->
     <string name="titulo_headset">Headsets</string>
@@ -39,7 +40,7 @@
     <string name="hyperx_Kit">Conjuntos</string>
 
     <!--Página de Compras-->
-    <string name="endereco">"Endereço: %1$s  \n Latitude: %2$s \n Longitude: %3$s \n Timestamp: %4$tr"</string>
+    <string name="endereco">"Endereço: %1$s  \n \n Horário: %4$tr"</string>
     <string name="loading">Carregando…</string>
     <string name="parar_busca">PARAR BUSCA</string>
     <string name="iniciar_busca">INICIAR</string>

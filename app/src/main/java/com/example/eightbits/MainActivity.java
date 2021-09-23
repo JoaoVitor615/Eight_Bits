@@ -5,14 +5,24 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    SensorManager sensorManager;
+    Sensor sensor;
+    SensorEventListener sensorEventListener;
+    int aparecer = 0;
 
     ImageButton botaoCompras, botaoAbrirInfo, botaoAbrirCat, botaoRazer, botaoHyperx, monitor1, monitor2, botaoPromoTec;
     @Override
@@ -20,6 +30,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
+        sensorManager=(SensorManager)getSystemService(SENSOR_SERVICE);
+        sensor= sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        if(sensor==null)
+            finish();
+
+        sensorEventListener=new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent sensorevent) {
+                float x = sensorevent.values[0];
+                float y = sensorevent.values[1];
+                float z = sensorevent.values[2];
+                System.out.println("Valor GiroX" + x);
+
+                if(x<-5 && aparecer == 0) {
+                    aparecer++;
+                    mensagem();
+                } else if(x>-5 && aparecer == 1) {
+                    aparecer++;
+                }
+                if(aparecer == 2) {
+                    aparecer = 0;
+                }
+
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+
+            }
+        };
+
+        Start();
 
         botaoAbrirInfo=findViewById(R.id.btnInfo);
         botaoAbrirInfo.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +144,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Intent.createChooser(it, "Escolha o aplicativo"));
             }
         });
+    }
+
+    private void Start() {
+        sensorManager.registerListener(sensorEventListener,sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+    private void Stop() {
+        sensorManager.unregisterListener(sensorEventListener);
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Stop();
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Start();
+    }
+    private void mensagem(){
+        Toast.makeText(this, getString(R.string.toastSensor), Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -11,7 +11,7 @@
         android:id="@+id/toolbar10"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
+        android:background="#4AB15A"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,25 +33,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar10" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="360dp"
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:textColorHint="#BF494949"
-        app:boxBackgroundColor="#FFFFFF"
+        android:fontFamily="@font/allerta"
+        android:gravity="center"
+        android:text="Insira algum comentário ou sugestão para termos um feedback de nossos usuários. Agradecemos pela colaboração!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar10"
-        app:layout_constraintVertical_bias="0.06999999">
+        app:layout_constraintVertical_bias="0.060000002" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edittextSug"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="327dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/allerta"
-            android:hint="Deixe aqui sua sugestão"
+            android:text="Armazenamento Externo"
+            android:textAlignment="center"
             android:textColor="#000000" />
-    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnGravarExterno"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Fazer Comentário" />
+
+        <Button
+            android:id="@+id/btnLeituraExterno"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Visualizar Comentário" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:paddingTop="20dp"
+            android:text="Armazenamento Interno"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnGravarInterno"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Fazer Comentário" />
+
+        <Button
+            android:id="@+id/btnLeituraInterno"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Visualizar Comentário" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="234dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:srcCompat="@drawable/comentarios" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

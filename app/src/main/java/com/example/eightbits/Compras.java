@@ -248,9 +248,7 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         lastLongitude = mPreferences.getString(LONGITUDE_KEY, "");
         long time = mPreferences.getLong(LASTDATE_KEY, 0);
         lastAdress = mPreferences.getString(LASTADRESS_KEY, "");
-        Toast.makeText(this,
-                getString(R.string.endereco,
-                        lastAdress, lastLatitude, lastLongitude, time),
+        Toast.makeText(this, getString(R.string.endereco, lastAdress, lastLatitude, lastLongitude, time),
                 Toast.LENGTH_SHORT).show();
 
     }

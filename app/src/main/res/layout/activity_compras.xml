@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta"
-        android:text="Carrinho"
+        android:text="Lojas"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar11"
@@ -38,8 +38,7 @@
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta"
-        android:text="Para fazer compras, permita que a Eight Bits veja sua localização!"
-        android:textAlignment="center"
+        android:text="Permita que a Eight Bits veja sua localização para encontrar nossas lojas próximas!"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,20 +55,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar11"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/textview_location"
         android:layout_width="380dp"
         android:layout_height="160dp"
+        android:backgroundTint="#AF3F3F"
         android:fontFamily="@font/allerta"
         android:gravity="center"
-        android:text="Clique para iniciar a busca"
+        android:text="Clique no botão abaixo..."
         android:textColor="#0E0E0E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar11" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar11"
+        app:layout_constraintVertical_bias="0.65" />
 
     <TextView
         android:id="@+id/textView31"
@@ -83,4 +84,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBuscar"
         app:layout_constraintVertical_bias="0.26" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textview_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:srcCompat="@drawable/ponteiro_localizacao" />
 </androidx.constraintlayout.widget.ConstraintLayout>
