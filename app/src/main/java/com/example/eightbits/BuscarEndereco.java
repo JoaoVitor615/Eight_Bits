@@ -87,12 +87,6 @@ public class BuscarEndereco extends AsyncTask<Location, Void, String[]> {
         return resultMessage;
     }
 
-    /**
-     * Called once the background thread is finished and updates the
-     * UI with the result.
-     * @param address The resulting reverse geocoded address, or error
-     *                message if the task failed.
-     */
     @Override
     protected void onPostExecute(String[] address) {
         mListener.onTaskCompleted(address);

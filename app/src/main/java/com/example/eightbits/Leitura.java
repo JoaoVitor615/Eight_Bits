@@ -25,7 +25,7 @@ public class Leitura extends AppCompatActivity {
 
 //        txtTexto = (TextView) findViewById(R.id.txt_text);
 //        type = (Type) getIntent().getSerializableExtra(Constants.STORAGE_TYPE);
-
+//
 //        try {
 //
 //            if (type == Type.INTERNAL){

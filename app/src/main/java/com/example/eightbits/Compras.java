@@ -31,17 +31,14 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
     private static final String LONGITUDE_KEY = "longitude";
     private static final String LASTDATE_KEY = "data";
 
-    // Views
     private Button mLocationButton;
     private TextView mLocationTextView;
     private static final String LASTADRESS_KEY = "adress";
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationCallback mLocationCallback;
-    // private Location location;
-    // classes Location
+
     private boolean mTrackingLocation;
 
-    // Shared preferences
     private SharedPreferences mPreferences;
     private String lastLatitude = "";
     private String lastLongitude = "";
@@ -60,18 +57,14 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(
                 this);
 
-        // Recupera o estado da aplicação quando é recriado
         if (savedInstanceState != null) {
             mTrackingLocation = savedInstanceState.getBoolean(
                     TRACKING_LOCATION_KEY);
         }
 
-        // Listener do botão de localização.
+        //
         mLocationButton.setOnClickListener(new View.OnClickListener() {
-            /**
-             * Toggle the tracking state.
-             * @param v The track location button.
-             */
+
             @Override
             public void onClick(View v) {
                 if (!mTrackingLocation) {
@@ -82,7 +75,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
             }
         });
 
-        // Inicializa os callbacks da locations.
         mLocationCallback = new LocationCallback() {
             /**
              * This is the callback that is triggered when the
@@ -99,17 +91,11 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
             }
         };
 
-        //inicializa as preferências do usuário
         mPreferences = getSharedPreferences(PREFERENCIAS_NAME, MODE_PRIVATE);
-        //recupera as preferencias
         recuperar();
     }
 
-    /**
-     * Inicia a busca da localização.
-     * Busca as permissões e requisição se não estiverem presentes
-     * Se estiverem requisitas as atualizações, define texto de carregamento
-     */
+
     private void startTrackingLocation() {
         if (ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION)
@@ -124,8 +110,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
                             mLocationCallback,
                             null /* Looper */);
 
-            // Set a loading text while you wait for the address to be
-            // returned
             mLocationTextView.setText(getString(R.string.endereco,
                     getString(R.string.loading), null, null,
                     System.currentTimeMillis()));
@@ -134,11 +118,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         }
     }
 
-    /**
-     * Define os location requests
-     *
-     * @return retorna os parametros.
-     */
     private LocationRequest getLocationRequest() {
         LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(10000);
@@ -147,9 +126,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         return locationRequest;
     }
 
-    /**
-     * Para a busca da localização
-     */
     private void stopTrackingLocation() {
         if (mTrackingLocation) {
             mTrackingLocation = false;
@@ -158,22 +134,13 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         }
     }
 
-    /**
-     * Salva a ultima localização
-     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putBoolean(TRACKING_LOCATION_KEY, mTrackingLocation);
         super.onSaveInstanceState(outState);
     }
 
-    /**
-     * Callback chamado com a resposta da request permission
-     *
-     * @param requestCode  Código da requisição
-     * @param permissions  Array com as requisições solicitadas.
-     * @param grantResults Array com a resposta das requisições
-     */
+
 
 
     @Override
@@ -181,7 +148,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case REQUEST_LOCATION_PERMISSION:
-                // Permissão garantida
                 if (grantResults.length > 0
                         && grantResults[0]
                         == PackageManager.PERMISSION_GRANTED) {
@@ -196,7 +162,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
     }
 
 
-    //Método com a resposta da BuscarEndereco
     @Override
     public void onTaskCompleted(String[] result) {
         if (mTrackingLocation) {
@@ -209,7 +174,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
         }
     }
 
-    //sobrescreve os métodos referentes aos sensores
     @Override
     protected void onPause() {
         super.onPause();
@@ -232,7 +196,6 @@ public class Compras extends AppCompatActivity implements BuscarEndereco.OnTaskC
     }
 
 
-    //armazena os dados
 
     private void armazenar(String latitude, String longitude, String lastAdress) {
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
