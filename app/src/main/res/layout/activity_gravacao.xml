@@ -11,24 +11,30 @@
         android:id="@+id/textInputLayout"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
+        android:textColorHint="#858585"
+        app:boxBackgroundColor="#DFDFDF"
+        app:boxStrokeColor="#4AB15A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012">
+        app:layout_constraintVertical_bias="0.050000012"
+        app:passwordToggleTint="#4AB15A">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_textGravacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira aqui seu comentário"
-            android:textColorHint="#D3000000" />
+            android:textColor="#000000"
+            android:textColorHint="#4AB15A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#4AB15A"
         android:onClick="fSalvarTexto"
         android:text="Salvar"
         app:layout_constraintBottom_toBottomOf="parent"

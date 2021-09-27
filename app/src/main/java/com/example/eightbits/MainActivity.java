@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent sensorevent) {
                 float x = sensorevent.values[0];
-                float y = sensorevent.values[1];
-                float z = sensorevent.values[2];
+
                 System.out.println("Valor GiroX" + x);
 
                 if(x<-5 && aparecer == 0) {

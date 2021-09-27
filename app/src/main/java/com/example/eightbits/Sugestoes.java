@@ -27,13 +27,25 @@ public class Sugestoes extends AppCompatActivity {
 
     }
 
+    public void fGravarInterna(View view){
+        Intent it = new Intent(this, Gravacao.class);
+        it.putExtra(Constants.STORAGE_TYPE, Constants.Type.INTERNAL);
+        startActivity(it);
+    }
+
+    public void fLerInterna(View view){
+        Intent it = new Intent(this, Leitura.class);
+        it.putExtra(Constants.STORAGE_TYPE, Constants.Type.INTERNAL);
+        startActivity(it);
+    }
+
     public void fGravarExterna(View view){
         Intent it = new Intent(this, Gravacao.class);
         it.putExtra(Constants.STORAGE_TYPE, Constants.Type.EXTERNAL);
         startActivity(it);
     }
 
-    public void fLerrExterna(View view){
+    public void fLerExterna(View view){
         Intent it = new Intent(this, Leitura.class);
         it.putExtra(Constants.STORAGE_TYPE, Constants.Type.EXTERNAL);
         startActivity(it);

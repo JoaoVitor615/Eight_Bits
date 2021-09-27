@@ -75,12 +75,14 @@
             android:id="@+id/btnGravarExterno"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="fGravarExterna"
             android:text="Fazer Comentário" />
 
         <Button
             android:id="@+id/btnLeituraExterno"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="fLerExterna"
             android:text="Visualizar Comentário" />
 
         <TextView
@@ -97,12 +99,14 @@
             android:id="@+id/btnGravarInterno"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="fGravarInterna"
             android:text="Fazer Comentário" />
 
         <Button
             android:id="@+id/btnLeituraInterno"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:onClick="fLerInterna"
             android:text="Visualizar Comentário" />
     </LinearLayout>
 
